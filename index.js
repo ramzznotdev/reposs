@@ -1,3 +1,4 @@
+// ==================== MODULE IMPORTS ==================== //
 const { Telegraf } = require("telegraf");
 const fs = require('fs');
 const pino = require('pino');
@@ -7,7 +8,6 @@ const path = require("path");
 const config = require("./database/config.js");
 const axios = require("axios");
 const express = require('express');
-const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const {
@@ -254,9 +254,9 @@ bot.command("start", (ctx) => {
 高速・柔軟性・絶対的な安全性を備えた 次世代ボットが今、覚醒する。
 
 〢「 𝐗𝐈𝐒 ☇ 𝐂𝐨𝐫𝐞 ° 𝐒𝐲𝐬𝐭𝐞𝐦𝐬 」
- ࿇ Author : —!s‘Rizxv6lz
+ ࿇ Author : —!s SaturnXapi
  ࿇ Type : ( Case─Plugins )
- ࿇ League : Asia/Jakarta-
+ ࿇ League : Asia/Indonesia-
 ┌─────────
 ├──── ▢ ( 𖣂 ) Sender Handler
 ├── ▢ owner users
@@ -528,7 +528,7 @@ console.log(chalk.blue(`⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 
 bot.launch();
 console.log(chalk.red(`
-╭─☐ BOT XTORDCV API 
+╭─☐ BOT SATRUNX API 
 ├─ ID OWN : ${OwnerId}
 ├─ DEVOLOPER : RIZXVELZ
 ├─ BOT : CONNECTED ✅
@@ -541,7 +541,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  const filePath = path.join(__dirname, "HCS-View", "index.html");
+  const filePath = path.join(__dirname, "HCS-View", "Login.html");
   fs.readFile(filePath, "utf8", (err, html) => {
     if (err) return res.status(500).send("❌ Gagal baca Login.html");
     res.send(html);
