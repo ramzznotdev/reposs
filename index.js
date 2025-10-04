@@ -541,7 +541,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.get("/", (req, res) => {
-  const filePath = path.join(__dirname, "HCS-View", "Login.html");
+  const filePath = path.join(__dirname, "HCS-View", "index.html");
   fs.readFile(filePath, "utf8", (err, html) => {
     if (err) return res.status(500).send("❌ Gagal baca Login.html");
     res.send(html);
